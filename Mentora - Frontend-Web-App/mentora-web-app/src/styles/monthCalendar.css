@@ -1,0 +1,98 @@
+.mc {
+  width: 100%;
+  background: transparent; 
+  padding: 0;
+  box-shadow: none;
+}
+
+.mcHeader {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.mcTitle {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.mcNavBtn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  font-size: 34px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.mcDowRow {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.mcDow {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.mcGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.mcCell {
+  height: 44px;
+  width: 44px;   
+  border-radius: 999px; 
+  border: none;   
+  background: transparent; 
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;    
+  transition: transform 0.08s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.mcCell:hover {
+  background: rgba(0, 0, 0, 0.08); 
+  transform: scale(1.05);
+}
+
+.mcCell:active {
+  transform: scale(0.98);
+}
+
+.mcCell.outMonth {
+  color: rgba(0,0,0,0.30);  
+  opacity: 1; 
+}
+
+.mcCell.selected {
+  background: #2d3a45;  
+  color: #ffffff;
+}
+
+.mcCell.today:not(.selected) {
+  outline: 2px solid rgba(0,0,0,0.35);
+  outline-offset: 2px;
+}
+
+.slotsSection {
+  max-width: 1200px;
+  margin: 14px auto 0 auto;
+  background: #BDDBED;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+}

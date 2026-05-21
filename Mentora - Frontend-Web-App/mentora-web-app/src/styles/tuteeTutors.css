@@ -1,0 +1,534 @@
+
+.ttPage {
+  padding: 26px 24px 40px;
+  background: #ffffff;
+  --tutor-card-width: 820px; 
+  --tutor-card-left: 240px;
+  --filters-max: 1400px;
+}
+
+.ttCenterBox {
+  min-height: 320px;
+  display: grid;
+  place-items: center;
+}
+
+.ttErrorBox {
+  background: #ffe0e0;
+  border: 1px solid #ff9c9c;
+  padding: 12px 14px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  max-width: 520px;
+  text-align: center;
+}
+
+.ttHero {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.ttHeroTitle {
+  font-size: 30px;
+  font-weight: 800;
+  color: #0a2a3a;
+}
+
+.ttHeroSubtitle {
+  margin-top: 6px;
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+.ttHeroActions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.ttSearchBtn {
+  border: none;
+  background: #111;
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px 18px;
+  cursor: pointer;
+}
+
+.ttClearBtn {
+  border: 1.5px solid #111;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px 18px;
+  cursor: pointer;
+}
+
+.ttSearchWrap {
+  margin: 18px auto 0;
+  width: min(1130px, 96vw);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fffed8;
+  border-radius: 999px;
+  padding: 20px 26px;           
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.ttSearchInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 22px;   
+  text-align: left;
+}
+
+.ttSearchingRow {
+  margin-top: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.ttSearchIcon {
+  color: #111;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.ttFilterBar {
+  margin-top: 18px;
+  padding: 18px 0 10px;
+  background: #ffffff; 
+}
+
+.ttFilterBy {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.ttFilterLine {
+  height: 1px;
+  flex: 1;
+  background: rgba(0,0,0,0.12);
+}
+
+.ttFilterLabelRow {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 10px;
+}
+
+.ttFilterPillsRow {
+  max-width: 1400px;   
+  margin: 12px auto 0;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10px 10px;
+  overflow-x: visible;   
+}
+
+
+.ttFilterPill {
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.ttFilterBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 999px;
+  padding: 12px 16px;  
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  cursor: pointer;
+}
+
+.ttFilterIcon {
+  font-size: 16px;
+}
+
+.ttFilterLabel {
+  font-size: 14px;
+  font-weight: 700;
+  opacity: 0.95;
+  white-space: nowrap;
+}
+
+.ttFilterSelect {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+  padding-right: 18px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.ttFilterChevron {
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.ttFilterMenu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 240px;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 14px;
+  box-shadow: 0 14px 34px rgba(0,0,0,0.16);
+  padding: 8px;
+  z-index: 50;
+}
+
+.ttFilterMenuItem {
+  width: 100%;
+  border: none;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.ttFilterMenuItem:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+.ttFilterMenuItem.active {
+  background: rgba(0,0,0,0.08);
+  font-weight: 700;
+}
+
+.ttFilterMenuItemText {
+  font-size: 14px;
+}
+
+.ttFilterMenuTick {
+  opacity: 0.8;
+}
+
+.ttClearAll {
+  border: 1.5px dashed rgba(0,0,0,0.35);
+  background: transparent;
+  border-radius: 999px;
+  padding: 10px 16px;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.ttSection {
+  max-width: 1200px;
+  margin: 22px auto 0;
+  padding: 0 10px;
+  text-align: left;
+}
+
+.ttSectionHeader {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.ttSectionTitle {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.ttSectionSubtitle {
+  font-size: 13px;
+  opacity: 0.75;
+  margin-top: 2px;
+}
+
+.ttRowScroller {
+  display: flex;
+  gap: 22px;          
+  overflow-x: auto;
+
+  padding: 14px 10px 18px; 
+  scroll-padding: 10px;
+  overscroll-behavior-x: contain;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 98%;
+  min-width: 0;
+}
+.ttRowScroller::-webkit-scrollbar {
+  display: none;
+}
+
+.ttSectionOuter{
+  width: 100%;
+  margin-top: 28px;
+}
+
+.ttSectionInner{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+  text-align: left;
+}
+
+
+.ttEmptyRow {
+  padding: 18px;
+  opacity: 0.75;
+  text-align: center;
+}
+
+.ttEmptyPage {
+  max-width: 760px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 24px;
+}
+
+.ttEmptyTitle {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.ttEmptyText {
+  margin-top: 8px;
+  opacity: 0.8;
+}
+
+.ttClearBtnBig {
+  margin-top: 16px;
+  border: none;
+  background: #111;
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.tutorCard {
+  width: var(--tutor-card-width);  
+  min-height: 255px;             
+  background: #edf5fa;
+  border-radius: 16px;    
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.10),
+    0 2px 10px rgba(0,0,0,0.06);
+  display: grid;
+  grid-template-columns: var(--tutor-card-left) 1px 1fr;
+  overflow: hidden;
+  flex: 0 0 auto;
+  cursor: pointer;
+  transition: transform 140ms ease, box-shadow 140ms ease;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.tutorCard:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 14px 40px rgba(0,0,0,0.12),
+    0 3px 14px rgba(0,0,0,0.08);
+}
+
+.tutorCardLeft {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tutorAvatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #b9d6ea;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 22px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  margin-bottom: 10px;
+}
+
+.tutorName {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.tutorSchool {
+  margin-top: 4px;
+  opacity: 0.85;
+}
+
+.tutorGpa {
+  margin-top: 4px;
+  opacity: 0.85;
+}
+
+.tutorStars {
+  margin-top: 12px;
+  font-size: 20px;
+}
+
+.tutorReviews {
+  margin-top: 4px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.tutorReviewCount {
+  font-weight: 800;
+}
+
+.tutorSessionsBadge {
+  margin-top: 12px;
+  background: #d7ecf7;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.tutorCardDivider {
+  background: rgba(0,0,0,0.15);
+}
+
+.tutorCardRight {
+  padding: 16px 18px;
+  position: relative;
+}
+
+.tutorTopLine {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.tutorMiniDivider {
+  display: inline-block;
+  width: 2px;
+  height: 16px;
+  background: #9fbfd6;
+  border-radius: 2px;
+  margin: 0 10px;
+  opacity: 1;
+  transform: translateY(2px);
+}
+
+
+.tutorModuleChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.tutorChip {
+  background: #fffed8;
+  border: 1.5px solid #111;
+  border-radius: 12px;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+.tutorChip.muted {
+  opacity: 0.75;
+}
+
+.tutorBioTitle {
+  font-size: 14px;
+  font-weight: 800;
+  margin-top: 2px;
+}
+
+.tutorBioText {
+  margin-top: 6px;
+  border-top: none;
+  padding-top: 0;
+  min-height: 58px;
+  opacity: 0.9;
+}
+
+
+.tutorMeta {
+  margin-top: 12px;
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.tutorBookBtn {
+  position: absolute;
+  right: 16px;
+  bottom: 14px;
+  border: none;
+  background: #111;
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 18px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.tutorBookBtn:hover {
+  transform: translateY(-1px);
+}
+
+.ttRowsStack {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.ttEndMessage {
+  margin: 48px 0 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+  opacity: 0.9;
+}
+
+.ttEndImage {
+  padding-top: 40px;
+  width: 135px;        
+  max-width: 40vw;
+  height: auto;
+}
+
+.ttEndText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ttEndTitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ttEndSubtitle {
+  font-size: 18px;
+  opacity: 0.80;
+}

@@ -1,0 +1,121 @@
+
+.mCard {
+  width: min(560px, 92vw);
+  background: #cfe6f5;
+  border-radius: 12px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.mHeader {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mTitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.mClose {
+  border: none;
+  background: transparent;
+  font-size: 26px;
+  cursor: pointer;
+  line-height: 1;
+  justify-self: end;
+}
+
+.mBody {
+  display: grid;
+  gap: 12px;
+}
+
+.mCenter {
+  justify-items: center;
+  text-align: center;
+}
+
+.mPill {
+  background: #fffed8;
+  border-radius: 10px;
+  padding: 10px 14px;
+  width: fit-content;
+}
+
+.mLine {
+  font-size: 14px;
+}
+
+.mMuted {
+  opacity: 0.8;
+}
+
+.mText {
+  font-size: 15px;
+  line-height: 1.35;
+  margin-top: 10px;
+}
+
+.mTiny {
+  margin-top: 7px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.mError {
+  background: #ffe8e8;
+  border: 1px solid #ffb3b3;
+  color: #a40000;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.mFooter {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.mFooterSplit {
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.mFooter button {
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-weight: 600;
+}
+
+.mHintError {
+  margin-top: -8px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #a40000;
+  opacity: 0.9;
+}
+
+.setBtnGhost {
+  border: 1px solid rgba(0,0,0,0.0);
+  background: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  min-width: 150px;
+}
+
+.setBtnDanger {
+  border: none;
+  background: #111;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  min-width: 150px;
+}

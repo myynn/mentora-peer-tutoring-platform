@@ -1,0 +1,191 @@
+:root {
+  --sess-max-width: 1200px;
+  --sess-card-radius: 14px; 
+  --sess-card-pad-x: 20px; 
+  --sess-font-base: 15px;
+  --sess-font-label: 14px;
+  --sess-font-date: 20px;
+}
+
+.sessList {
+  max-width: var(--sess-max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 12px 0 28px;
+}
+
+.sessItem {
+  margin: 18px 0;
+}
+
+.sessDate {
+  font-size: var(--sess-font-date);
+  font-weight: 600;
+  margin: 0 0 10px 4px;
+}
+
+.sessCard {
+  background: #edf5fa;
+  border-radius: var(--sess-card-radius);
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.sessTopRow {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.10);
+}
+
+.sessTopLeft {
+  padding: 16px var(--sess-card-pad-x);
+  border-right: 1px solid rgba(0,0,0,0.25);
+  font-weight: 600;
+  font-size: var(--sess-font-base);
+}
+
+.sessTopRight {
+  position: relative;  
+  padding: 12px var(--sess-card-pad-x);
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 8px;
+  font-size: var(--sess-font-base);
+}
+
+.sessTopRightLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.sessWhoName {
+  font-weight: 500;
+  opacity: 0.9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.sessWhoLabel {
+  font-weight: 600;
+}
+
+.sessWhoName {
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.sessStatusPill {
+  position: absolute;  
+  top: 6px;
+  right: var(--sess-card-pad-x);
+
+  background: #fffed8;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.sessBody {
+  padding: 16px var(--sess-card-pad-x) 10px;
+}
+
+.sessLine {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 10px;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.sessLineLabel {
+  font-size: var(--sess-font-label);
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+.sessLineValue {
+  border-bottom: 2px solid rgba(0,0,0,0.30);
+  padding-bottom: 6px;
+  min-height: 20px;
+  font-size: var(--sess-font-base);
+}
+
+.sessFooter {
+  padding: 12px 16px 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.sessFooterLeft,
+.sessFooterRight {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.sessBtn {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: transform 120ms ease, filter 120ms ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.14);
+}
+
+.sessBtn:hover {
+  transform: translateY(-1px);
+  filter: brightness(0.98);
+}
+
+.sessBtn.primary {
+  background: #111;
+  color: #fff;
+}
+
+.sessBtn.secondary {
+  background: #cfe6f5;
+  color: #111;
+}
+
+.sessHintWrap {
+  margin: 14px 0 6px;
+  display: flex;
+  justify-content: center;
+}
+
+.sessHintBox {
+  width: min(720px, 100%);
+  background: #fffed8;
+  border: 1px solid rgba(0,0,0,0.18);
+  border-radius: 12px;
+  padding: 14px 16px;
+  text-align: center;
+  font-size: var(--sess-font-base);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.setEmptyState {
+  text-align: center;
+  opacity: 0.95;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.setEmptyImg {
+  width: var(--empty-img-size, 150px);
+  height: auto;
+  display: block;
+}

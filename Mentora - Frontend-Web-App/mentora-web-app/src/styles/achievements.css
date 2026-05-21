@@ -1,0 +1,471 @@
+
+.achPage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 24px 40px;
+}
+
+.achTitle {
+  line-height: 1.45;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 10px 0 30px;
+}
+
+.loadingBox,
+.errorBox,
+.emptyBox {
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.loadingBox {
+  background: #eef6ff;
+  border: 1px solid #cfe6ff;
+}
+
+.errorBox {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #7f1d1d;
+}
+
+.emptyBox {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+}
+
+.podiumRow {
+  display: grid;
+  grid-template-columns: repeat(3, 290px);
+  justify-content: center;
+  gap: 14px;
+  align-items: end;
+  margin-bottom: 12px;
+}
+
+.podiumCircle {
+  position: relative;
+  border-radius: 18px;
+  padding: 20px 10px;
+  text-align: center;
+  background: #EDF5FA;
+  border: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.14);
+  min-height: 130px;
+}
+
+.podium1 {
+  background: #DEF4FF;
+  border: none;
+  transform: translateY(-10px);
+}
+
+.podium2,
+.podium3 {
+  background: #eef6ff;
+}
+
+.podiumCrown {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size:30px;
+}
+
+.podiumAvatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #b9d6ea;
+  display: grid;
+  place-items: center;
+  font-size: 34px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  margin: 0 auto;
+}
+
+.podiumName {
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 27px;
+}
+
+.podiumPoints {
+  font-size: 18px;
+  margin-top: 2px;
+  font-weight: 400;
+}
+
+.podiumRank {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: white;
+  background: #0b2a4a;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+}
+
+.leaderboardList {
+  background: #fffbe6;
+  border: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.14);
+  border-radius: 14px;
+  padding: 8px;
+}
+
+.leaderRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #EDF5FA;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 14px;
+  margin: 8px 6px;
+
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+.leaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.leaderRank {
+  width: 34px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.leaderAvatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #b9d6ea;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.leaderName {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.leaderPoints {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.pointsSummaryCard {
+  max-width: 420px;
+  margin: 0 auto 14px;
+  text-align: center;
+
+  background: #EDF5FA;
+  border: none;
+  border-radius: 14px;
+  padding: 23px 16px;
+
+  box-shadow: 0 4px 14px rgba(0,0,0,0.14);
+}
+
+.pointsSummaryWrap {
+  position: relative;
+  max-width: 520px;
+  margin: 0 auto 14px;
+}
+
+.pointsSummaryCard {
+  position: relative;
+  z-index: 2;
+}
+
+.pointsSummarySideImg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 130px;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.pointsSummarySideImgLeft {
+  left: -120px;
+}
+
+.pointsSummarySideImgRight {
+  right: -120px;
+}
+
+
+.pointsSummaryLabel {
+  font-size: 18px;
+  color: #475569;
+  font-weight: 700;
+}
+
+.pointsSummaryValue {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 6px 0;
+  color: #0b2a4a;
+}
+
+.pointsSummaryHint {
+  font-size: 17px;
+  color: #475569;
+  font-weight: 700;
+}
+
+.pointsHistoryWrap {
+  background: #EDF5FA;
+  border: none;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.14);
+}
+
+.pointsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pointsItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #cfe8f7;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 12px;
+
+}
+
+.pointsIconWrap {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: #fffed8;
+  border: none;
+  display: grid;
+  place-items: center;
+  margin-right: 10px;
+  flex: 0 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+
+.pointsIcon {
+  font-size: 30px;
+  color: #0b2a4a;
+}
+
+.pointsText {
+  flex: 1;
+  min-width: 0;
+}
+
+.pointsReason {
+  font-weight: 800;
+  color: #0b2a4a;
+  font-size: 18px;
+}
+
+.pointsDate {
+  font-size: 14px;
+  color: #475569;
+  margin-top: 2px;
+}
+
+.pointsDelta {
+  font-weight: 900;
+  font-size: 23px;
+  color: #0b2a4a;
+  margin-left: 10px;
+}
+
+.pointsLoadMore {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.pointsLoadMore {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.badgesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+}
+
+@media (max-width: 860px) {
+  .badgesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .badgesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.badgeCard {
+  border-radius: 16px;
+  padding: 18px;
+  border: none;
+  background: #EDF5FA;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.14);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.badgeEarned {
+  background: linear-gradient(20deg, #ffffff, #fffed8);
+  border: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.badgeLocked {
+  background: #e2e8f0;
+  border: none;
+  box-shadow: none;
+  opacity: 0.65;
+  filter: grayscale(1);
+}
+
+.badgeLocked {
+  position: relative;
+  overflow: hidden;
+}
+
+.badgeLocked::after {
+  content: "LOCKED";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.15);
+  color: rgba(15, 23, 42, 0.75);
+}
+
+.badgeTop {
+  display: flex;
+  gap: 10px;
+}
+
+.badgeIconWrap {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  border: none;
+  background: #BDDBED;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+  flex: 0 0 auto;
+}
+
+.iconEarned { background: #BDDBED; border: none; }
+.iconLocked { background: #f1f5f9; border: none; box-shadow: none; }
+
+
+.badgeIcon {
+  font-size: 30px;
+  color: #0b2a4a;
+}
+
+.badgeName {
+  font-weight: 800;
+  color: #0b2a4a;
+  font-size: 18px;
+}
+
+.badgeDesc {
+  font-size: 13px;
+  color: #475569;
+  margin-top: 3px;
+}
+
+.badgeBottom {
+  margin-top: 2px;
+}
+
+.badgeCriteria {
+  font-size: 12px;
+  color: #475569;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.badgeProgressRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badgeProgressBar {
+  height: 10px;
+  border-radius: 999px;
+  background: #fffbe6;
+  border: 1px solid #f3e3a6;
+  flex: 1;
+  overflow: hidden;
+}
+
+.badgeProgressFill {
+  height: 100%;
+  border-radius: 999px;
+  background: #0b2a4a;
+}
+
+.badgeProgressText {
+  font-size: 12px;
+  font-weight: 800;
+  color: #0b2a4a;
+  min-width: 56px;
+  text-align: right;
+}
+
+.badgeDone {
+  text-align: left;
+}
+
+.badgeDoneText {
+  font-size: 14px;
+  font-weight: 900;
+  color: #0b2a4a;
+}
+
+.badgeDoneDate {
+  font-size: 12px;
+  color: #475569;
+  margin-top: 2px;
+}

@@ -1,0 +1,135 @@
+.bookPage {
+  min-height: 100vh;
+  background: #ffffff;  
+  padding: 24px 18px;  
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  
+}
+
+.bookCard {
+  width: min(1150px, 94vw);  
+  background: #bddbed;   
+  border-radius: 18px;
+  padding: 26px 34px 30px 34px;  
+}
+
+.bookHeader {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.bookBack {
+  border: none;
+  background: transparent;
+  font-size: 40px;      
+  line-height: 1;
+  cursor: pointer;
+}
+
+.bookTitlePill {
+  justify-self: center; 
+  background: #fffed8;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-align: center;
+  max-width: 520px;
+  width: fit-content;
+}
+
+.bookHeaderRight {
+  justify-self: end;
+}
+
+.bookSlotsWrap {
+  margin-top: 14px;
+}
+
+.bookFieldError {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #b30000;
+  text-align: center;     
+}
+
+.bookSlotsRow {
+  display: flex;
+  justify-content: center; 
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 12px 6px 0;
+}
+
+.bookSlotChip {
+  border: none;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 10px 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 120ms ease;
+}
+
+.bookSlotChip:hover {
+  transform: translateY(-1px);
+}
+
+.bookSlotChip.active {
+  background: #111;
+  color: #fff;
+}
+
+.bookForm {
+  margin-top: 18px;
+  display: grid;
+  gap: 14px;
+}
+
+.bookActions {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.bookSubmit {
+  min-width: 320px;  
+  max-width: 100%;
+}
+
+.bookCenter {
+  min-height: 340px;
+  display: grid;
+  place-items: center;
+}
+
+.bookError {
+  background: #ffe8e8;
+  border: 1px solid #ffb3b3;
+  color: #a40000;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.bookEmpty,
+.bookEmptyInline {
+  opacity: 0.85;
+  text-align: center;  
+  margin-top: 10px;
+}
+
+.bookCalendarWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+.bookCalendarWrap > * {
+  transform: scale(0.90);
+  transform-origin: top center;
+}

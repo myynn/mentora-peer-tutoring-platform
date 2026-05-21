@@ -1,0 +1,225 @@
+
+.setPage {
+  width: 100%;
+  padding: 9px 0 28px;
+}
+
+.setInner {
+  width: min(1200px, 94vw);  
+  margin: 0 auto;
+}
+
+
+.setTopBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding:  31px;   
+  margin-bottom: 14px;
+}
+
+.setBack {
+  position: absolute;
+  left: 29px; 
+  border: none;
+  background: transparent;
+  font-size: 40px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.setTitle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  width: 60%;
+  pointer-events: none;
+}
+
+.setCenter {
+  margin-top: 24px;
+  display: grid;
+  gap: 14px;
+  justify-items: center;
+}
+
+.setContent {
+  display: grid;
+  gap: 14px;
+}
+
+.setUserCard {
+  width: 97%;
+  background: #eaf3fa;
+  border-radius: 12px;
+  padding: 18px 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+
+
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+
+  min-height: 180px;   
+}
+
+.setUserCardRow {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  width: min(650px, 100%); 
+  margin-left: 320px;
+}
+
+
+.setAvatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: #b9d6ea;
+  display: grid;
+  place-items: center;
+  font-size: 34px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  margin: 0;
+  flex: 0 0 auto
+}
+
+
+.setUserName {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.setContent {
+  display: grid;
+  gap: 22px;
+}
+
+
+.setUserMeta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+  font-size: 20px;
+  opacity: 0.85;
+}
+
+.setDivider {
+  color: #9bb7c9; 
+  font-weight: 700;
+}
+
+.setMenuGroup {
+  background: #fffed8;
+  border-radius: 12px;
+  padding: 6px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+}
+
+.setMenuItem {
+  width: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 16px 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100px;
+}
+
+.setMenuItem + .setMenuItem {
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.setMenuLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.setMenuIcon {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.setMenuLabel {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.setMenuArrow {
+  font-size: 26px;
+  opacity: 0.75;
+}
+
+.setLogoutBar {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 16px 45px;
+  background: #cfe6f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+  min-height: 100px;
+}
+
+.setModalText {
+  font-size: 15px;
+  line-height: 1.80;
+  text-align: center; 
+  max-width: 420px; 
+  margin: 0 auto; 
+}
+
+.setModalWarning {
+  font-weight: 700;    
+  color: #222;  
+  margin-bottom: 14px;
+}
+
+.setModalQuestion {
+  font-weight: 500;
+  color: #555;               
+}
+
+.setModalBtns {
+  margin-top: 50px;
+  display: flex;
+  gap: 14px;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.setBtnGhost {
+  border: 1px solid rgba(0,0,0,0.0);
+  background: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  min-width: 150px;
+}
+
+.setBtnDanger {
+  border: none;
+  background: #111;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  min-width: 150px;
+}

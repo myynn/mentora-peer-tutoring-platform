@@ -1,0 +1,60 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.input,
+.select {
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  padding: 0 14px;
+  font-size: 16px;
+  background: #ffffff;
+}
+
+.inputError {
+  border: 2px solid #d10000;
+}
+
+.errorText {
+  color: #d10000;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #BDDBED;
+  color: #000;
+}
+
+.btn-auth {
+  width: 260px;
+  align-self: center;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
